@@ -1,0 +1,135 @@
+<html> 
+    <head>
+    <meta charset="UTF-8">
+            <title> Profile - JBZ Kota Cirebon</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="stylee.css"> 
+
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="home2.html"><img src="image/logoZ.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Beranda.html"> HOME </a></li>
+                        <li><a href="Profil.html"> PROFILE </a></li>
+                        <li><a href="CP.html"> CONTACT PERSON </a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1> PROFIL JBZ KOTA CIREBON</h1>
+        </section>
+
+<!----------------------------------------------------Profil----------------------------------------------->
+    <section class="about-us">
+        <div class="about">
+            <div class="about-img">
+                <img src="image/jbzkocir-removebg (1).png">
+            </div>
+            <div class="about-col">
+            <h1 align="center"><b>Yuk Kenali!<br> Apa Itu JBZ Kota Cirebon?</b> </h1>
+            <p>Jabar Bergerak Zillenial Kota Cirebon menjadi motor perubahan yang positif dalam
+                membangun Generasi Zillenial yang lebih inklusif, berdaya dan berbudaya bagi masyarakatnya dalam mewujudkan 
+                dampak kebermanfaatan yang nyata di bidang kemanusiaan dan pendidikan</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vimi">
+        <div class="about">
+            <div class="about-visi">
+                <h1 align="center"> VISI </h1>
+                <p align="center">Mewujukan Jabar Bergerak Zillenial Kota Cirebon sebagai pionir komunitas berbasis kemanusiaan
+                    dan pendidikan yang inklusif, berdaya dan berbudaya di daerah, bersinergi secara aktif dalam menebar
+                    kebermanfaatan bagi masyarakatsesuai nilai-nilai Jabar Bergerak Zillenial</p>
+            </div>
+            <div class="about-misi">
+            <h1 align="center"> MISI </h1>
+            <p>1. Menjalankan program-program aksi kemanusiaan yang berkelanjutan dan responsif, untuk menciptakan lingkungan yang lebih inklusif dan berdaya<br> <br>
+                2. Mendorong akses pendidikan yang merata, dengan memberikan dukunngan fasilitas belajar yang ramah, dan program
+                pendidikan informal yang mendukung pengembangan keterampilan <br> <br>
+                3. Menciptakan kesadaran akan pentingnya pelestarian budaya dan lingkungan di Kota Cirebon secara daring maupun luring. <br> <br>
+                4. Membangun relasi kerjasama dan kemitraan yang kuat, untuk mendorong kolaborasi yang efektif dalam mendukung program-program.
+                yang sesuai dengan nilai-nilai Jabar Bergerak Zillenial</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="program/IMG_20240804_174403.jpg" style="width: 100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="program/IMG_20240804_174438.jpg" style="width: 100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="program/IMG_20240804_174508.jpg" style="width: 100%">
+        </div>
+
+        <div class="overlaydot">
+            <div style="text-align: center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+<!---------Footer---------->
+<section class="footer">
+    <h4> Contact Us </h4>
+    <p> Jabar Bergerak Zillenial Kota Cirebon <br> #KamiMudaSiapAksi </p>
+<div class="icon"> 
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-whatsapp"></i></a>
+    <a href="#"><i class="fa fa-youtube-play"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+</div>
+<p> - Made with <i class="fa fa-heart-o"></i> by MinZi -  </p>
+</section>
+
+
+<!-----------JavaScript for Menu------------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px"
+            }
+        </script>
+
+        
+    </body>
+</html>
+
+<script type="text/javascript">
+    var slideIndex=0;
+    showSlides();
+    
+    function showSlides(){
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for(i = 0; i<slides.length; i++){
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+    
+        if(slideIndex > slides.length){ slideIndex = 1 }
+            for(i = 0; i<dots.length; i++){
+                dots[i].className = dots[i].className.replace(" active","");
+            }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000);
+    }
+    </script>
