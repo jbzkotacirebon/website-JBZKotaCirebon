@@ -1,0 +1,95 @@
+<html> 
+    <head>
+    <meta charset="UTF-8">
+            <title> Contact Person - JBZ Kota Cirebon </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="stylee.css"> 
+        
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="home2.html"><img src="image/logoZ.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Beranda.html"> HOME </a></li>
+                        <li><a href="Profil.html"> PROFILE </a></li>
+                        <li><a href="CP.html"> CONTACT PERSON </a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1> CONTACT US </h1>
+        </section>
+
+        <section id="contact-us" class="container">
+                <form action="https://formsubmit.co//nakeisha.kunay02@gmail.com" method="post">
+                    <h1> Get In Touch</h1>
+
+                    <div class="input">
+                        <input type="text" placeholder="  Ketik Namamu  "/>
+                        <input type="email" name="" id="" placeholder=" masukkan alamat emailmu "/>
+                        <textarea name="massage" id="" cols="30" rows="20" placeholder="     Yuk kirim pesan ke MinZi "></textarea>
+                        <button class="primary-btn">KIRIM KE MINZI</button>
+                    </div>
+                </form>
+
+                <div class="address">
+                    <h1> Yuk Kepoin Minzi! </h1>
+
+                    <div class="minzi">
+                        <div class="detail-minzi">
+                            <div class="text">
+                                <h5>SYARAT KERJA SAMA</h5>
+                                <a href src="#"><p>PDF Media Partner</p></a>
+                            </div>
+                        </div>
+
+                        <div class="detail-minzi">
+                                <i class="fa fa-envelope"></i>
+                                <p>jbz.kotacirebon@gmail.com</p>
+                        </div>
+
+                        <div class="detail-minzi">
+                                <i class="fa fa-phone"></i>
+                                <p>+62 822-9546-0206</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+<!---------Footer---------->
+<section class="footer">
+    <h4> Contact Us </h4>
+    <p> Jabar Bergerak Zillenial Kota Cirebon <br> #KamiMudaSiapAksi </p>
+<div class="icon"> 
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-whatsapp"></i></a>
+    <a href="#"><i class="fa fa-youtube-play"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+</div>
+<p> - Made with <i class="fa fa-heart-o"></i> by MinZi -  </p>
+</section>
+
+
+<!-----------JavaScript for Menu------------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px"
+            }
+        </script>
+
+        
+    </body>
+</html>

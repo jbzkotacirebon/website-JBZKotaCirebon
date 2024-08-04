@@ -1,0 +1,106 @@
+<html> 
+    <head>
+    <meta charset="UTF-8">
+            <title> Gallery </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="stylee.css"> 
+        <script src="popup/jquery.js"></script>
+        <link rel="stylesheet" href="popup/magnific-popup.css">
+        <script src="popup/jquery.magnific-popup.js"></script>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="home2.html"><img src="image/logoZ.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home2.html"> HOME </a></li>
+                        <li><a href="About.html"> PROFILE </a></li>
+                        <li><a href="Gallery.html"> GALLERY </a></li>
+                        <li><a href="CP.html"> CONTACT PERSON </a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1> GALLERY </h1>
+        </section>
+        
+        <div class="photo">
+          <h3 align="center">GALLERY 2023</h3>  
+            <div class="galerifoto">
+                <div class="gallery">
+                    <div class="box"><a href="2023/berbagi takjil/IMG-20230415-WA0042.jpg" title="Berbagi Takjil"><img src="2023/berbagi takjil/IMG-20230415-WA0042.jpg"></a></div>
+                    <div class="box"><a href="2023/bubos7.1.jpg" title="Bubos7"><img src="2023/bubos7.1.jpg"></a></div>
+                    <div class="box"><a href="2023/HYDBP1.jpg" title="Hayu Diajar Bumi Pasundan"><img src="2023/HYDBP1.jpg"></a></div>
+                    <div class="box"><a href="2023/HYDBP2.jpg" title="Hayu Diajar Bumi Pasundan"><img src="2023/HYDBP2.jpg"></a></div>
+                    <div class="box"><a href="2023/Z-Comdev1.jpg" title="Zillenial Community Development"><img src="2023/Z-Comdev1.jpg"></a></div>
+                </div>
+                <div class="gallery">
+                    <div class="box"><a href="2023/Z-Comdev2.jpg" title="Zillenial Community Development"><img src="2023/Z-Comdev2.jpg"></a></div>
+                    <div class="box"><a href="2023/Z-Comdev3.jpg" title="Zillenial Community Development"><img src="2023/Z-Comdev3.jpg"></a></div>
+                    <div class="box"><a href="2023/Z-Comdev4.jpg" title="Zillenial Community Development"><img src="2023/Z-Comdev4.jpg"></a></div>
+                    <div class="box"><a href="2023/Z-Comdev5.jpg" title="Zillenial Community Development"><img src="2023/Z-Comdev5.jpg"></a></div>
+                    <div class="box"><a href="2023/Z-Comdev6.jpg" title="Zillenial Community Development"><img src="2023/Z-Comdev6.jpg"></a></div>
+                </div>
+            </div>
+        </div>
+
+
+<!---------Footer---------->
+<section class="footer">
+    <h4> Contact Us </h4>
+    <p> Jabar Bergerak Zillenial Kota Cirebon <br> #KamiMudaSiapAksi </p>
+<div class="icon"> 
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-whatsapp"></i></a>
+    <a href="#"><i class="fa fa-youtube-play"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+</div>
+<p> - Made with <i class="fa fa-heart-o"></i> by MinZi -  </p>
+</section>
+
+
+<!-----------JavaScript for Menu------------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px"
+            }
+        </script>
+
+<!----------------------Galeri----------------------->
+
+    <script>
+        $(document).ready(function(){
+        $('.gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery:{
+                enabled: true,
+                navigateByImgClick: true,
+                tPrev: 'Previous (Left arrow key)',
+                tNext: 'Next (Right arrow key)',
+                tCounter: '%curr% of %total%',
+                preload: [0,1]
+            },
+            image:{
+                tError: '<a href="%url%">The Image #%curr%</a> Tidak Dapat Diproses',
+                titleSrc: function(item){
+                    return item.el.attr('title') + '<small>' + item.el.attr('decs') + '</small>';
+                }
+            }
+        });
+        });
+    </script>  
+
+    </body>
+</html>
